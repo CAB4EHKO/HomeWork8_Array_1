@@ -5,6 +5,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -84,5 +85,16 @@ public class Main {
             }
             System.out.print(months[i] + ", ");
         }
+    }
+    public static void task4() {
+        System.out.println("Task 4.");
+        int[] nums = new int[3];
+        for (int i = 0; i <= nums.length - 1; i++) {
+            nums[i] = i + 1;
+            if (i % 2 == 0) {
+                nums[i]++;
+            }
+        }
+        System.out.println(Arrays.toString(nums));
     }
 }
